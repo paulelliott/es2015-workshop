@@ -1,0 +1,13 @@
+{
+  "name": "es2015-workshop",
+  "description": "Hands on content for an instructor-led workshop on ES2015.",
+  "private": true,
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "mocha": "^2.2.5"
+  },
+  "repository": "https://github.com/paulelliott/es2015-workshop",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register"
+  }
+}
