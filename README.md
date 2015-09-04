@@ -1,5 +1,8 @@
 # ES2015 Workshop
 
+All changes should be made to the setup code. No changes should be made to the
+expectation line.
+
 ## Setup
 
 - `git clone git@github.com:paulelliott/es2015-workshop.git`
