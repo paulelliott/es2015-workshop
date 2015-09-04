@@ -27,3 +27,12 @@
   - includes
   - repeat
   - trim
+
+## Section 3 - Functions
+
+`npm test test/functions.js`
+
+- fat arrows
+- single line functions with implicit returns
+- default parameters
+- spread
