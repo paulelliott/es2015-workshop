@@ -39,3 +39,11 @@ expectation line.
 - single line functions with implicit returns
 - default parameters
 - spread
+
+## Section 4 - Enhanced Object Literals
+
+`npm test test/object-literals.js`
+
+- shorthands
+- methods
+- dynamic property names
