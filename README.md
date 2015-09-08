@@ -65,3 +65,12 @@ expectation line.
 - default import
 - named imports
 - wildcard imports
+
+## Section 7 - Destructuring
+
+`npm test test/destructuring.js`
+
+- array matching
+- object matching
+- nested object matching
+- default values
