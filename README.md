@@ -47,3 +47,13 @@ expectation line.
 - shorthands
 - methods
 - dynamic property names
+
+## Section 5 - Classes
+
+`npm test test/classes.js`
+
+- class definitions
+- shorthand functions
+- static functions
+- extends
+- super
