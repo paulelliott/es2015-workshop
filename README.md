@@ -57,3 +57,11 @@ expectation line.
 - static functions
 - extends
 - super
+
+## Section 6 - Modules
+
+`npm test test/modules.js`
+
+- default import
+- named imports
+- wildcard imports
