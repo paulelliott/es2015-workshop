@@ -1,3 +1,13 @@
+/**
+ * Section 1 - Variables
+ *
+ * - let
+ * - const
+ *
+ * https://babeljs.io/docs/learn-es2015/#let-const
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+ */
 const assert = require("assert");
 
 describe('Variables', function() {
