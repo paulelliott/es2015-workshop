@@ -1,6 +1,21 @@
+/**
+ * Section 2 - Template Strings
+ *
+ * - interpolation
+ * - template strings
+ * - new String methods via polyfill
+ *   - startsWith
+ *   - endsWith
+ *   - includes
+ *   - repeat
+ *   - trim
+ *
+ * https://babeljs.io/docs/learn-es2015/#template-strings
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Template_strings
+ */
 const assert = require("assert");
 
-describe('Strings', function() {
+describe('Template Strings', function() {
   describe('template strings', function () {
     it('can work just like normal strings', function () {
       const x = ``; // update the value of `x` here
