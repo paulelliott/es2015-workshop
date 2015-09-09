@@ -18,9 +18,9 @@ expectation line.
 - let
 - const
 
-## Section 2 - Template Strings
+## Section 2 - Strings
 
-`npm test test/template-strings.js`
+`npm test test/strings.js`
 
 - interpolation
 - template strings

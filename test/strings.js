@@ -1,5 +1,5 @@
 /**
- * Section 2 - Template Strings
+ * Section 2 - Strings
  *
  * - interpolation
  * - template strings
@@ -15,7 +15,7 @@
  */
 const assert = require("assert");
 
-describe('Template Strings', function() {
+describe('Strings', function() {
   describe('template strings', function () {
     it('can work just like normal strings', function () {
       const x = ``; // update the value of `x` here
