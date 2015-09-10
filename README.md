@@ -1,8 +1,5 @@
 # ES2015 Workshop
 
-All changes should be made to the setup code. No changes should be made to the
-expectation line.
-
 ## Setup
 
 - `git clone git@github.com:paulelliott/es2015-workshop.git`
@@ -10,6 +7,18 @@ expectation line.
 - `npm install`
 - `npm test`
 - You should see a friendly message from mocha showing all tests failing
+
+## Instructions
+
+- Open the file in each section in your favorite editor
+- Run the tests against the file using the `npm test` command provided with each section
+- Verify the tests all fail
+- Fix each `it` block one at a time and get them to pass.
+  - DO NOT change any `assert` lines. You should only change the code leading up to the asserts.
+  - Read the failure message and the comments throughout the files. They are there to guide you through the concepts.
+  - Don't cheat! There are shortcuts to getting the tests to pass, but this is about learning ES2015 concepts and not passing tests.
+
+* IMPORTANT: Once you get the tests in a file to pass, feel free to play with the code and experiment with the concepts!
 
 ## Section 1 - Variables
 
