@@ -74,3 +74,11 @@ expectation line.
 - object matching
 - nested object matching
 - default values
+
+## Section 8 - Arrays
+
+`npm test test/arrays.js`
+
+- spread
+- for...of
+- Iterators
