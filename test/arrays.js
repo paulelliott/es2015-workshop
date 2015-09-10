@@ -32,6 +32,7 @@ describe('Arrays', function() {
         assert.deepEqual([a, b, c], [1, 2, 3], 'Insert the spread operator before the array in the function call');
       };
 
+      // TODO: Add the spread operator to pass the array values in as separate arguments.
       fx([1, 2, 3]);
     });
   });
@@ -57,24 +58,24 @@ describe('Arrays', function() {
 
   describe('Iterators', function () {
     it('allow you to define custom iteration', function () {
-      // Create an iterator
+      // Create an iterator.
       const powersOfTwo = {
-        // Defines an iterator function using the dynamic property names we talked about earlier
+        // Defines an iterator function using the dynamic property names we talked about earlier.
         [Symbol.iterator]() {
           let value = 1;
           let count = 0;
 
           return {
-            // The next function allows you to define what happens with each iteration
+            // The next function allows you to define what happens with each iteration.
             next() {
-              // Keep count of how many times we iterate so we don't overflow
+              // Keep count of how many times we iterate so we don't overflow.
               count += 1;
 
-              // TODO: Add some code here to increase `value` with each iteration
+              // TODO: Add some code here to increase `value` with each iteration.
 
               /**
-               * done: false means we've reached the end. The value returned with it will be discarded
-               * value: the value provided for this iteration
+               * done: false means we've reached the end. The value returned with it will be discarded.
+               * value: the value provided for this iteration.
                */
               return { done: count === 5, value: value }
             }
@@ -82,15 +83,15 @@ describe('Arrays', function() {
         }
       }
 
-      // Create an array to store our generated values so we have something to assert against
+      // Create an array to store our generated values so we have something to assert against.
       const powers = [];
 
-      // Use the iterator like you would a normal array
+      // Use the iterator like you would a normal array.
       for (const power of powersOfTwo) {
         powers.push(power);
       }
 
-      // Only goes to 16 because 32 returned `done: false`
+      // Only goes to 16 because 32 returned `done: false`.
       assert.deepEqual(powers, [2, 4, 8, 16], 'Change the code in `next` to iterate appropriately');
     });
   });
