@@ -18,7 +18,7 @@ describe('Section 3 - Functions', function() {
     it('do not need parameters but still need parens', function () {
       const func = () => {
         // TODO: Change the return value here to "initial value"
-        return '';
+        return 'initial value';
       };
 
       assert.equal(func(), 'initial value', 'Update the return value of the function to match the expectation');
@@ -27,7 +27,7 @@ describe('Section 3 - Functions', function() {
     it('do not need parens with a single parameter', function() {
       const func = arg1 => {
         // TODO: The expectation passed initial so add "value" to the end of this string
-        return `${arg1}`;
+        return `${arg1} value`;
       };
 
       assert.equal(func('initial'), 'initial value', 'Update the return value of the function to match the expectation');
@@ -36,7 +36,7 @@ describe('Section 3 - Functions', function() {
     it('can accept multiple arguments', function() {
       const func = (arg1, arg2) => {
         // TODO: Update the return value to match the expectation
-        return `${arg1}`;
+        return `${arg1} ${arg2}`;
       };
 
       assert.equal(func('initial', 'value'), 'initial value', 'Update the return value of the function to match the expectation');
@@ -46,7 +46,7 @@ describe('Section 3 - Functions', function() {
       this.value = 'value';
 
       // TODO: Change this from a function to a =>
-      const func = function(arg1) {
+      const func = arg1 => {
         return `${arg1} ${this.value}`;
       };
 
@@ -57,7 +57,7 @@ describe('Section 3 - Functions', function() {
       const func = () => 'initial value';
 
       // TODO: Call the function to get the implicitly returned value
-      const returnValue = '';
+      const returnValue = func();
 
       assert.equal(returnValue, 'initial value', 'Change the RHS of returnValue to get the implicitly returned value');
     });
@@ -68,7 +68,7 @@ describe('Section 3 - Functions', function() {
       const func = (arg1='initial value') => arg1;
 
       // TODO: Call the function so that the default value is invoked
-      const returnValue = '';
+      const returnValue = func();
 
       assert.equal(returnValue, 'initial value', "Change the RHS of returnValue to leverage the function's default");
     });
@@ -77,7 +77,7 @@ describe('Section 3 - Functions', function() {
       const func = (arg1='initial value') => arg1;
 
       // TODO: Change the arguments to match the expectation
-      const returnValue = func(null);
+      const returnValue = func();
 
       assert.equal(returnValue, 'initial value', 'Change the arguments to match the expectation');
     });
@@ -88,7 +88,7 @@ describe('Section 3 - Functions', function() {
       const func = (...allTheArgs) => allTheArgs.length;
 
       // TODO: Call the function correctly to produce a return value matching the expectation
-      const returnValue = func();
+      const returnValue = func(1, 2, 3);
 
       assert.equal(returnValue, 3, 'Pass arguments to the function call to produce the correct return value');
     });
