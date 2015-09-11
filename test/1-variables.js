@@ -17,7 +17,7 @@ describe('Section 1 - Variables', function() {
   describe('let', function () {
     it('works similarly to var', function () {
       // TODO: update the value of `x` here
-      let x = '';
+      let x = 'initial value';
 
       assert.equal(x, 'initial value', 'Update the value of `x` to be "initial value"');
     });
@@ -26,6 +26,7 @@ describe('Section 1 - Variables', function() {
       let x = 'initial value';
 
       // TODO: reassign `x` to "updated value" here
+      x = 'updated value';
 
       assert.equal(x, 'updated value', 'Reassign `x` to "updated value"');
     });
@@ -33,15 +34,13 @@ describe('Section 1 - Variables', function() {
     it('does not allow redefinition', function () {
       let x = 'initial value';
 
-      // TODO: Redefine x to watch babel blow up
-
       assert.fail('Redefine `x` and watch the whole test suite bomb out');
     });
 
     it('is only available in the scope it was defined in', function() {
       {
         // TODO: Change this var to a let
-        var x = 'initial value';
+        let x = 'initial value';
       };
 
       assert.throws(function() {
@@ -53,7 +52,7 @@ describe('Section 1 - Variables', function() {
   describe('const', function () {
     it('works similarly to var', function () {
       // TODO: update the value of `x` here
-      const x = '';
+      const x = 'initial value';
 
       assert.equal(x, 'initial value', 'Update the value of `x` to be "initial value"');
     });
@@ -61,15 +60,11 @@ describe('Section 1 - Variables', function() {
     it('does not allow reassignment', function () {
       const x = 'initial value';
 
-      // TODO: reassign `x` to see babel blow up
-
       assert.fail('Reassign `x` and watch the whole test suite bomb out');
     });
 
     it('does not allow redefinition', function () {
       const x = 'initial value';
-
-      // TODO: Redefine x to watch babel blow up
 
       assert.fail('Redefine `x` and watch the whole test suite bomb out');
     });
@@ -77,7 +72,7 @@ describe('Section 1 - Variables', function() {
     it('is only available in the scope it was defined in', function() {
       {
         // TODO: Change this var to a let
-        var x = 'initial value';
+        const x = 'initial value';
       };
 
       assert.throws(function() {
