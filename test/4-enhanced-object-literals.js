@@ -14,7 +14,7 @@ const assert = require("assert");
 describe('Section 4 - Enhanced Object Literals', function() {
   describe('shorthands', function () {
     it('automatically use scoped variables named the same as a key', function () {
-      const v1 = '';
+      const v1 = 'value1';
 
       const values = {
         // TODO: add `v1,` ** without a `:` or value ** to see it automatically expand
