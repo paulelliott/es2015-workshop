@@ -16,7 +16,7 @@
  */
 import assert from 'assert';
 
-describe('New Built-In Classes', function() {
+describe('Section 9 - New Built-In Classes', function() {
   describe('Set', function () {
     it('prevents duplicates', function () {
       const set = new Set();

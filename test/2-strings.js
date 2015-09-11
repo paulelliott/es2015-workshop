@@ -15,7 +15,7 @@
  */
 const assert = require("assert");
 
-describe('Strings', function() {
+describe('Section 2 - Strings', function() {
   describe('template strings', function () {
     it('can work just like normal strings', function () {
       const x = ``; // update the value of `x` here

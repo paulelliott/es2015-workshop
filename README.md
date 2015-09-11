@@ -22,14 +22,14 @@
 
 ## Section 1 - Variables
 
-`npm test test/variables.js`
+`npm test test/1-variables.js`
 
 - let
 - const
 
 ## Section 2 - Strings
 
-`npm test test/strings.js`
+`npm test test/2-strings.js`
 
 - interpolation
 - template strings
@@ -42,7 +42,7 @@
 
 ## Section 3 - Functions
 
-`npm test test/functions.js`
+`npm test test/3-functions.js`
 
 - fat arrows
 - single line functions with implicit returns
@@ -51,7 +51,7 @@
 
 ## Section 4 - Enhanced Object Literals
 
-`npm test test/object-literals.js`
+`npm test test/4-enhanced-object-literals.js`
 
 - shorthands
 - methods
@@ -59,7 +59,7 @@
 
 ## Section 5 - Classes
 
-`npm test test/classes.js`
+`npm test test/5-classes.js`
 
 - class definitions
 - shorthand functions
@@ -69,7 +69,7 @@
 
 ## Section 6 - Modules
 
-`npm test test/modules.js`
+`npm test test/6-modules.js`
 
 - default import
 - named imports
@@ -77,7 +77,7 @@
 
 ## Section 7 - Destructuring
 
-`npm test test/destructuring.js`
+`npm test test/7-destructuring.js`
 
 - array matching
 - object matching
@@ -86,13 +86,15 @@
 
 ## Section 8 - Arrays
 
-`npm test test/arrays.js`
+`npm test test/8-arrays.js`
 
 - spread
 - for...of
 - Iterators
 
 ## Section 9 - New Built-In Classes
+
+`npm test test/9-new-built-in-classes.js`
 
 - Set
 - Map

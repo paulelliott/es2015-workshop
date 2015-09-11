@@ -1,6 +1,6 @@
 const assert = require("assert");
 
-describe('Object Literals', function() {
+describe('Section 4 - Enhanced Object Literals', function() {
   describe('shorthands', function () {
     it('automatically use scoped variables named the same as a key', function () {
       const v1 = '';

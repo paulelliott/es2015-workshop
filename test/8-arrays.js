@@ -16,7 +16,7 @@
  */
 import assert from 'assert';
 
-describe('Arrays', function() {
+describe('Section 8 - Arrays', function() {
   describe('spread', function () {
     it('destructures an array', function () {
       const a = [1, 2]

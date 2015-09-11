@@ -1,6 +1,6 @@
 const assert = require("assert");
 
-describe('Functions', function() {
+describe('Section 3 - Functions', function() {
   describe('fat arrows', function () {
     it('do not need parameters but still need parens', function () {
       const func = () => {

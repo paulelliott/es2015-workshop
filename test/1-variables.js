@@ -10,7 +10,7 @@
  */
 const assert = require("assert");
 
-describe('Variables', function() {
+describe('Section 1 - Variables', function() {
   describe('let', function () {
     it('works similarly to var', function () {
       let x = ''; // update the value of `x` here

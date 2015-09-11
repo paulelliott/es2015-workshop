@@ -1,6 +1,6 @@
 import assert from 'assert';
 
-describe('Destructuring', function() {
+describe('Section 7 - Destructuring', function() {
   describe('array matching', function () {
     it('declares variables from array elements', function () {
       const [] = [1, 2, 3]

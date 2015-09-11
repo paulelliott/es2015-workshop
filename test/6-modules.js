@@ -1,6 +1,6 @@
 import assert from 'assert';
 
-describe('Modules', function() {
+describe('Section 6 - Modules', function() {
   describe('default import', function () {
     it('provides easy access to something important', function () {
       assert.equal(answer(), 42, 'Add `import answer from \'lib/future-math\' at the top of this file');

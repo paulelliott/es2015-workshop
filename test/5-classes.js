@@ -1,6 +1,6 @@
 const assert = require("assert");
 
-describe('Classes', function() {
+describe('Section 5 - Classes', function() {
   describe('definitions', function () {
     it('uses shorthand function syntax', function () {
       class FutureMath {
