@@ -17,7 +17,7 @@ describe('Section 4 - Enhanced Object Literals', function() {
       const v1 = 'value1';
 
       const values = {
-        // TODO: add `v1,` ** without a `:` or value ** to see it automatically expand
+        v1,
         v2: 'value2'
       };
 
@@ -28,10 +28,8 @@ describe('Section 4 - Enhanced Object Literals', function() {
   describe('methods', function() {
     it('allow super', function() {
       const object = {
-        // TODO: Change this to the shorthand function syntax
-        v1: function() {
-          // TODO: Uncomment this code to make the assertion pass
-          // return super.toString();
+        v1() {
+          return super.toString();
         }
       };
 
@@ -42,7 +40,7 @@ describe('Section 4 - Enhanced Object Literals', function() {
   describe('dynamic property names', function() {
     it('lets you build property names on the fly', function() {
       // TODO: Change the value of num to make the assertion pass
-      const num = 0;
+      const num = 1;
 
       const values = {
         [`v${num}`]: 'value1'
