@@ -1,3 +1,14 @@
+/**
+ * Section 4 - Enhanced Object Literals
+ *
+ * - shorthands
+ * - methods
+ * - dynamic property names
+ *
+ * Further Reading:
+ *
+ * https://babeljs.io/docs/learn-es2015/#enhanced-object-literals
+ */
 const assert = require("assert");
 
 describe('Section 4 - Enhanced Object Literals', function() {
@@ -6,28 +17,31 @@ describe('Section 4 - Enhanced Object Literals', function() {
       const v1 = '';
 
       const values = {
-        v1,
+        // TODO: add `v1,` ** without a `:` or value ** to see it automatically expand
         v2: 'value2'
       };
 
-      assert.equal(values.v1, 'value1', 'Update the value of "const v1" to match the expectation');
+      assert.equal(values.v1, 'value1', 'Add an automatically expanding variable to the object');
     });
   });
 
   describe('methods', function() {
-    it('accepts a shorthand declaration', function() {
-      const values = {
-        v1() {
-          return '';
+    it('allow super', function() {
+      const object = {
+        // TODO: Change this to the shorthand function syntax
+        v1: function() {
+          // TODO: Uncomment this code to make the assertion pass
+          // return super.toString();
         }
       };
 
-      assert.equal(values.v1(), 'value1', 'Update the return value of the "v1" function to match the expectation');
+      assert.equal(object.v1(), '[object Object]', 'Change the function to a method and uncomment the return line');
     });
   });
 
   describe('dynamic property names', function() {
     it('lets you build property names on the fly', function() {
+      // TODO: Change the value of num to make the assertion pass
       const num = 0;
 
       const values = {
