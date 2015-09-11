@@ -91,3 +91,9 @@
 - spread
 - for...of
 - Iterators
+
+## Section 9 - New Built-In Classes
+
+- Set
+- Map
+- Reflect
