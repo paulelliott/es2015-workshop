@@ -25,7 +25,7 @@ describe('Section 2 - Strings', function() {
   describe('template strings', function () {
     it('can work just like normal strings', function () {
       // TODO: update the value of `x` here
-      const x = ``;
+      const x = `initial value`;
 
       assert.equal(x, 'initial value', 'Update the value of `x` to be "initial value"');
     });
@@ -33,7 +33,7 @@ describe('Section 2 - Strings', function() {
     it('can accept embedded variables', function() {
       const y = "value";
       // TODO: Interpolate the value of y into x
-      const x = `initial `;
+      const x = `initial ${y}`;
 
       assert.equal(x, 'initial value', `Use interpolation to embed "${y}"`);
     });
@@ -41,6 +41,7 @@ describe('Section 2 - Strings', function() {
     it('can span multiple lines', function() {
       // TODO: Update this string to match the expectation
       const x = `
+        initial value
       `;
 
       assert.equal(x, `
@@ -52,7 +53,7 @@ describe('Section 2 - Strings', function() {
   describe('#startsWith', function() {
     it('returns true if the string begins with the test string', function() {
       // TODO: Change initial to updated to make the expectation pass
-      const x = 'initial value';
+      const x = 'updated value';
 
       assert.ok(x.startsWith('updated'), 'Change "initial" to "updated" in "x"');
     });
@@ -61,7 +62,7 @@ describe('Section 2 - Strings', function() {
   describe('#endsWith', function() {
     it('returns true if the string ends with the test string', function() {
       // TODO: Append value to this string to make the expectation pass
-      const x = 'initial ';
+      const x = 'initial value';
 
       assert.ok(x.endsWith('value'), 'Append "value" to "x"');
     });
@@ -70,7 +71,7 @@ describe('Section 2 - Strings', function() {
   describe('#includes', function() {
     it('returns true if the string includes the test string', function() {
       // TODO: Fix the spelling of initial here to make the expectation pass
-      const x = 'inital value';
+      const x = 'initial value';
 
       assert.ok(x.includes('tial'), 'Fix the spelling of "initial" in "x"');
     });
@@ -79,7 +80,7 @@ describe('Section 2 - Strings', function() {
   describe('#repeat', function() {
     it('returns the string repeated some number of times', function() {
       // TODO: Change the value passed to repeat here to make the expectation pass
-      const x = 'foobar'.repeat(1);
+      const x = 'foobar'.repeat(3);
 
       assert.equal(x, 'foobarfoobarfoobar', 'Change the number of repeats');
     });
