@@ -1,3 +1,16 @@
+/**
+ * Section 5 - Classes
+ *
+ * - class definitions
+ * - shorthand functions
+ * - static functions
+ * - extends
+ * - super
+ *
+ * Further Reading:
+ *
+ * https://babeljs.io/docs/learn-es2015/#classes
+ */
 const assert = require("assert");
 
 describe('Section 5 - Classes', function() {
@@ -5,19 +18,20 @@ describe('Section 5 - Classes', function() {
     it('uses shorthand function syntax', function () {
       class FutureMath {
         answer() {
-          return 0;
+          return 42;
         }
       };
 
-      const futureMath = new FutureMath();
+      // TODO: Change the RHS to new FutureMath() and call the answer method on it
+      const returnValue = 0;
 
-      assert.equal(futureMath.answer(), 42, 'Update the return value of "answer" to match the expectation');
+      assert.equal(returnValue, 42, 'Leverage the answer method from the FutureMath class to meet the expectation');
     });
 
     it('supports constructors', function() {
       class FutureMath {
-        constructor() {
-          this.answerSource = '';
+        constructor(publicationType='book') {
+          this.answerSource = `Hitchhikers ${publicationType} to the Galaxy`;
         }
 
         answer() {
@@ -25,12 +39,13 @@ describe('Section 5 - Classes', function() {
         }
       };
 
-      const futureMath = new FutureMath();
+      // TODO: Pass the appropriate value into the class constructor
+      const returnValue = new FutureMath().answerSource;
 
       assert.equal(
-        futureMath.answerSource,
+        returnValue,
         'Hitchhikers Guide to the Galaxy',
-        'Update the return value of "answer" to match the expectation'
+        'Pass the correct value into the class constructor to produce the expected return value'
       );
     });
 
@@ -41,11 +56,14 @@ describe('Section 5 - Classes', function() {
         }
 
         static pie() {
-          return 0;
+          return 3.14;
         }
       };
 
-      assert.equal(FutureMath.pie(), 3.14, 'Update the return value of "pie" to match the expectation');
+      // TODO: Update the RHS to call the static function on the FutureMath class
+      const returnValue = 0;
+
+      assert.equal(returnValue, 3.14, 'Call FutureMath.pie() to get the expected return value');
     });
   });
 
@@ -57,18 +75,19 @@ describe('Section 5 - Classes', function() {
         }
       };
 
-      class PresentMath /* extends FutureMath */ {
+      // TODO: Extend FutureMath here to leverage the answer from FutureMath
+      class PresentMath {
         theAnswer() {
           return `Not sure yet but rumors say ${this.answer()}`;
         }
       }
 
-      const presentMath = new PresentMath();
+      const returnValue = new PresentMath().theAnswer();
 
       assert.equal(
-        presentMath.theAnswer(),
+        returnValue,
         'Not sure yet but rumors say 42',
-        'Fix the extends declaration on PresentMath'
+        'Extend FutureMath to leverage the answer method'
       );
     });
   });
@@ -83,16 +102,17 @@ describe('Section 5 - Classes', function() {
 
       class PresentMath extends FutureMath {
         answer() {
-          return `Not sure yet but rumors say ${answer()}`;
+          // TODO: User super to call the answer from FutureMath
+          return `Not sure yet but rumors say ${0}`;
         }
       }
 
-      const presentMath = new PresentMath();
+      const returnValue = new PresentMath().answer();
 
       assert.equal(
-        presentMath.answer(),
+        returnValue,
         'Not sure yet but rumors say 42',
-        'Update the call to answer to use `super`'
+        "Update the return value in PresentMath's answer to use super"
       );
     });
   });
