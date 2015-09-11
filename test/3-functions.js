@@ -3,7 +3,7 @@
  *
  * - fat arrows
  * - single line functions with implicit returns
- * - default parameters
+ * - default parameter values
  * - spread
  *
  * Further Reading:
@@ -63,7 +63,7 @@ describe('Section 3 - Functions', function() {
     });
   });
 
-  describe('default parameters', function() {
+  describe('default parameter values', function() {
     it('allow you to provide a default if one is not passed in', function() {
       const func = (arg1='initial value') => arg1;
 
