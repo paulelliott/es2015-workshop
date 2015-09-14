@@ -21,8 +21,7 @@ describe('Section 8 - Arrays', function() {
     it('destructures an array', function () {
       const a = [1, 2]
 
-      // TODO: Add the spread operator to flatten a into b.
-      const b = [a, 3];
+      const b = [...a, 3];
 
       assert.deepEqual(b, [1, 2, 3], 'Insert the spread operator before `a`');
     });
@@ -32,8 +31,7 @@ describe('Section 8 - Arrays', function() {
         assert.deepEqual([a, b, c], [1, 2, 3], 'Insert the spread operator before the array in the function call');
       };
 
-      // TODO: Add the spread operator to pass the array values in as separate arguments.
-      fx([1, 2, 3]);
+      fx(...[1, 2, 3]);
     });
   });
 
@@ -47,8 +45,7 @@ describe('Section 8 - Arrays', function() {
       const initialValues = [4, 5, 6];
       const copiedValues = [];
 
-      // TODO: Change this loop to a for...of iterator
-      for (const i in initialValues) {
+      for (const i of initialValues) {
         copiedValues.push(i);
       }
 
@@ -71,7 +68,7 @@ describe('Section 8 - Arrays', function() {
               // Keep count of how many times we iterate so we don't overflow.
               count += 1;
 
-              // TODO: Add some code here to increase `value` with each iteration.
+              value *= 2;
 
               /**
                * done: false means we've reached the end. The value returned with it will be discarded.
