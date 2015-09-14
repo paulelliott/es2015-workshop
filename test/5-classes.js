@@ -24,8 +24,7 @@ describe('Section 5 - Classes', function() {
         }
       };
 
-      // TODO: Change the RHS to new FutureMath() and call the answer method on it
-      const returnValue = 0;
+      const returnValue = new FutureMath().answer();
 
       assert.equal(returnValue, 42, 'Leverage the answer method from the FutureMath class to meet the expectation');
     });
@@ -37,8 +36,7 @@ describe('Section 5 - Classes', function() {
         }
       };
 
-      // TODO: Pass the appropriate value into the class constructor
-      const returnValue = new FutureMath().answerSource;
+      const returnValue = new FutureMath('Guide').answerSource;
 
       assert.equal(
         returnValue,
@@ -54,8 +52,7 @@ describe('Section 5 - Classes', function() {
         }
       };
 
-      // TODO: Update the RHS to call the static function on the FutureMath class
-      const returnValue = 0;
+      const returnValue = FutureMath.pie();
 
       assert.equal(returnValue, 3.14, 'Call FutureMath.pie() to get the expected return value');
     });
@@ -69,8 +66,7 @@ describe('Section 5 - Classes', function() {
         }
       };
 
-      // TODO: Extend FutureMath here to leverage the answer from FutureMath
-      class PresentMath {
+      class PresentMath extends FutureMath{
         theAnswer() {
           return `Not sure yet but rumors say ${this.answer()}`;
         }
@@ -96,8 +92,7 @@ describe('Section 5 - Classes', function() {
 
       class PresentMath extends FutureMath {
         answer() {
-          // TODO: User super to call the answer from FutureMath
-          return `Not sure yet but rumors say ${0}`;
+          return `Not sure yet but rumors say ${super.answer()}`;
         }
       }
 
