@@ -17,8 +17,7 @@ import assert from 'assert';
 describe('Section 7 - Destructuring', function() {
   describe('array matching', function () {
     it('declares variables from array elements', function () {
-      // TODO: Add a, b, c to the inside of the array on the LHS
-      const [] = [1, 2, 3]
+      const [a, b, c] = [1, 2, 3]
 
       assert.deepEqual(
         [a, b, c], [1, 2, 3], 'Add a, b, and c to the left-hand side of the array'
@@ -26,8 +25,7 @@ describe('Section 7 - Destructuring', function() {
     });
 
     it('allows skipping elements we do not care about', function() {
-      // TODO: Add "a, , c" to the LHS of the array
-      const [] = [1, 2, 3]
+      const [a, , c] = [1, 2, 3]
 
       assert.deepEqual(
         [a, c], [1, 3], 'Add a and c to the left-hand side of the array'
@@ -42,8 +40,7 @@ describe('Section 7 - Destructuring', function() {
     });
 
     it('allows you to specify defaults', function() {
-      // TODO: Specify a default value in the LHS array
-      const [a] = []
+      const [a=1] = []
 
       assert.equal(a, 1, 'Specify a default value for a on the left-hand side to match the expectation');
     });
@@ -51,8 +48,7 @@ describe('Section 7 - Destructuring', function() {
 
   describe('object matching', function () {
     it('declares variables from objects properties', function () {
-      // TODO: Add "a, b, c" to the LHS object
-      const {} = { a: 1, b: 2, c: 3 }
+      const { a, b, c } = { a: 1, b: 2, c: 3 }
 
       assert.deepEqual(
         [a, b, c], [1, 2, 3], 'Add a, b, and c to the object in the left-hand side of the declaration'
@@ -60,8 +56,7 @@ describe('Section 7 - Destructuring', function() {
     });
 
     it('allows skipping elements we do not care about', function() {
-      // TODO: Add "a, c" to the LHS object
-      const {} = { a: 1, b: 2, c: 3 }
+      const { a, c } = { a: 1, b: 2, c: 3 }
 
       assert.deepEqual(
         [a, c], [1, 3], 'Add a and c to the empty object on the left-hand side of the assignment'
@@ -76,8 +71,7 @@ describe('Section 7 - Destructuring', function() {
     });
 
     it('allows you to specify defaults', function() {
-      // TODO: Specify a default in the LHS object
-      const {a} = {}
+      const { a=1 } = {}
 
       assert.equal(a, 1, 'Specify a default value for a on the left-hand side to match the expectation');
     });
@@ -86,8 +80,7 @@ describe('Section 7 - Destructuring', function() {
   describe('nested object matching', function() {
     it('declares locals from a nested object', function() {
       const {
-        // TODO: Add "b, c" to this object to declare them as local variables
-        a: {}
+        a: { b, c }
       } = {
         a: { b: 2, c: 3 }
       };
@@ -99,8 +92,7 @@ describe('Section 7 - Destructuring', function() {
 
     it('allows renames', function() {
       const {
-        // TODO: Add "c: d" to this object to rename the variable from the source object
-        a: {}
+        a: { c: d }
       } = {
         a: { c: 3 }
       };
