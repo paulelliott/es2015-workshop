@@ -10,12 +10,14 @@
  * Further Reading:
  *
  * https://babeljs.io/docs/learn-es2015/#classes
+ *
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
  */
 const assert = require("assert");
 
 describe('Section 5 - Classes', function() {
   describe('definitions', function () {
-    it('uses shorthand function syntax', function () {
+    it('uses method syntax', function () {
       class FutureMath {
         answer() {
           return 42;
@@ -33,10 +35,6 @@ describe('Section 5 - Classes', function() {
         constructor(publicationType='book') {
           this.answerSource = `Hitchhikers ${publicationType} to the Galaxy`;
         }
-
-        answer() {
-          return 42;
-        }
       };
 
       // TODO: Pass the appropriate value into the class constructor
@@ -51,10 +49,6 @@ describe('Section 5 - Classes', function() {
 
     it('supports static functions', function() {
       class FutureMath {
-        answer() {
-          return 42;
-        }
-
         static pie() {
           return 3.14;
         }
