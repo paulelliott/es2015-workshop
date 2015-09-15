@@ -2,7 +2,7 @@
  * Section 5 - Classes
  *
  * - class definitions
- * - shorthand functions
+ * - method syntax
  * - static functions
  * - extends
  * - super
