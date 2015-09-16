@@ -38,7 +38,7 @@ describe('Section 6 - Modules', function() {
       // TODO: Modify the import statement again to import
       // removeEverythingAfterTheDecimal as the more sane name, "floor"
 
-      assert.equal(math.floor(pie), 3, 'Add another import statement with `import answer, { pie, removeEverythingAfterTheDecimal as floor } from \'../lib/future-math\'');
+      assert.equal(floor(pie), 3, 'Add another import statement with `import answer, { pie, removeEverythingAfterTheDecimal as floor } from \'../lib/future-math\'');
     });
   });
 });
